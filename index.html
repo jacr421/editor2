@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="redag">
+            <form name='editor'>
+                <input name='btn_edit' type="button" value='Edit'>
+                <input name='btn_bold' type="button" value='B'>
+                <input name='btn_italic' type="button" value='I'>
+                <input name="btn_underline" type="button" value='U'>
+                <select name="fontSize" id="">
+                <option value="12px">12px</option>
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+            </select>
+                <select name="fontFamily" id="">
+                <option value="Arial">Arial</option>
+                <option value="Tahoma">Tahoma</option>
+            </select>
+                <input name='btn_c' type="button" value='color'>
+                <input name='btn_bgc' type="button" value='background'>
+                <form name="texAlign">
+                    <input name='ta' class='texAlign' type="radio" value='left'>left
+                    <input name='ta' class='texAlign' type="radio" value='center'>center
+                    <input name='ta' class='texAlign' type="radio" value='right'>right
+                </form>
+            </form>
+        </div>
+        <div id="colors_wrap">
+            <div id="colors">
+                <div class="btn" style="width: 100%">
+                    <input id='btn_bg' value='Background Image' type="button"></div>
+                <div class="color color1"></div>
+                <div class="color color2"></div>
+                <div class="color color3"></div>
+                <div class="color color4"></div>
+                <div class="color color5"></div>
+                <div class="color color6"></div>
+                <div class="color color7"></div>
+                <div class="color color8"></div>
+                <div class="color color9"></div>
+            </div>
+        </div>
+        <div id="bgi_wrap">
+            <div id="bg_image">
+                <div class="btn" style="width: 100%">
+                    <input type="button" value="Background color">
+                </div>
+                <div class="image image1"><img src="img/1.jpg"></div>
+                <div class="image image2"><img src="img/2.jpg"></div>
+                <div class="image image3"><img src="img/3.jpg"></div>
+                <div class="image image4"><img src="img/4.jpg"></div>
+                <div class="image image5"><img src="img/5.jpg"></div>
+                <div class="image image6"><img src="img/6.jpg"></div>
+                <div class="image image7"><img src="img/7.jpg"></div>
+                <div class="image image8"><img src="img/8.jpg"></div>
+                <div class="image image9"><img src="img/9.jpeg"></div>
+                <input id="btn_file" type="file" accept="image/*">
+            </div>
+
+
+        </div>
+        <div id="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio libero, odit necessitatibus nulla, natus eos eveniet ab id, saepe, sed vitae. Quos magnam fugit nam hic eaque cupiditate unde tempore omnis necessitatibus quod culpa dolorum nihil, repellendus sequi ea quisquam vel aperiam nesciunt voluptates non facilis impedit deleniti, veritatis! Amet vel laboriosam vitae pariatur necessitatibus neque id consequuntur repellat. Hic vel voluptatem quis deserunt rem dicta eaque. Odit inventore, ex earum quia, nihil explicabo at aperiam quo quaerat eligendi repudiandae error fuga deleniti officia incidunt? Eveniet voluptates non repellat laborum exercitationem deserunt iusto, magnam sapiente praesentium numquam, veniam sit laboriosam dolorum excepturi labore debitis voluptas enim, natus obcaecati nemo! Commodi hic sit laborum in dolor autem porro nemo enim ullam iusto praesentium consequuntur, minus fuga natus veritatis qui. Saepe ipsum perferendis nostrum est, porro laudantium, a at officia eveniet explicabo, nobis facere nihil maxime, qui eos quis illo? Fuga dolorum, inventore minus obcaecati, cumque quo, saepe itaque tempore atque modi a neque, impedit sed excepturi quod et. Mollitia repellendus cum eius quo, nam quae, deleniti sint aperiam ipsa magni distinctio in totam, rem ducimus doloribus, tempore debitis veniam qui ea sunt sit earum voluptatibus. Voluptates unde laudantium accusamus magni nisi ex et, doloribus facere cumque suscipit animi sit dolorum earum, vel fugiat velit modi, assumenda eos sint aut, aperiam possimus libero ad. Enim pariatur, debitis ullam? Reprehenderit cupiditate soluta minus laborum saepe dolorum itaque expedita. Ducimus natus iusto praesentium iste labore sit perferendis sint aperiam ad, dolor, tempora ipsum, eaque distinctio aliquid provident! Culpa iste laudantium ipsum iure cupiditate, unde voluptates vitae sequi aperiam magni excepturi mollitia, expedita tempore quisquam adipisci quod accusantium illo? Mollitia recusandae quae pariatur porro nobis quis aspernatur perferendis aliquid dolor. Harum at, quas explicabo animi itaque enim exercitationem hic voluptate soluta, et distinctio vitae accusamus!</p>
+        </div>
+    </div>
+    <div id="edit">
+        <div class='redag'>
+            <form name='editor2'>
+                <input name='btn_save' type="button" value='Save'>
+                <input name='btn_ct' type="button" value='Create table'>
+                <input name='btn_cl' type="button" value='Create list'>
+            </form>
+        </div>
+        <div class="editArea">
+            <textarea id="textArea">
+                
+            </textarea>
+
+        </div>
+        <div id="wrap_dataTable">
+            <form name="form_table">
+                <div id="dataTable">
+                    <label>
+                    <input name='row' type="text" placeholder='введіть кількість рядків'>
+                    <input name='col' type="text" placeholder='введіть кількість стовпців'>
+                </label>
+                    <label>
+                    <input name="width" type="text" placeholder='введіть ширину'>
+                    <input name ='height' type="text" placeholder='введіть висоту'>
+                </label>
+                    <label>
+                    <input name='cellspace' type="text" placeholder='введіть cellspacing'>
+                </label>
+                    <label>
+                    <input name='thickness' type="text" placeholder='введіть товщину рамки'>
+                    <input name="borderColor" type="text" placeholder='введіть колір рамки'>
+                </label>
+                    <label>
+                    <input name='btn_reset' type="button" value="скинути">
+                    <input name='btn_create' type="button" value='створити'>
+                </label>
+                </div>
+            </form>
+        </div>
+        <div id="wrap_dataList">
+            <form name="form_list">
+                <div id="dataList">
+                    <label>
+                        <span>тип списку: </span>
+                        <input name='typelist' type="radio" value='ol'>ol
+                        <input name='typelist' type="radio" value='ul'>ul
+                    </label>
+                    <label id='ul'>
+                          <span>тип маркування:</span>
+                          <select name="ul" id="">
+                              <option value="circle">circle</option>
+                              <option value="square">square</option>
+                              <option value="disc">disc</option>
+                          </select>
+                    </label>
+                    <label id='ol'>
+                          <span>тип маркування:</span>
+                              <select name="ol" id="">
+                              <option value="decimal">decimal</option>
+                              <option value="upper-alpha">ower-alpha</option>
+                              <option value="lower-alpha">lower-alpha</option>
+                              <option value="georgian">georgian</option>
+                              <option value="upper-roman">upper-roman</option>
+                              <option value="lower-roman">lower-roman</option>
+                          </select>
+                    </label>
+
+                    <label>
+                    <span>кількість айтемів</span>
+                    <input name='count' type="text" placeholder="кількість">
+                    </label>
+<label>                        <input name='btn_create' type="button" value="створити">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
